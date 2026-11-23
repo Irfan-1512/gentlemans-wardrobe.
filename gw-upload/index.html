@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gentleman's Wardrobe: an AI stylist picks the right suit for your occasion and budget, plus complete styling guides for shirt, tie, shoes, belt and watch.">
+<meta name="keywords" content="men's fashion, outfit suggestions, suit guide, style advice, mens wardrobe, clothing match, gentleman style">
+<meta name="author" content="Gentleman's Wardrobe">
+<meta name="theme-color" content="#1E1210">
+<meta property="og:title" content="Gentleman's Wardrobe — Dress Like You Mean It">
+<meta property="og:description" content="Tell the AI stylist your occasion and budget. Get a complete suit outfit.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gentlemanswardrobe.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gentleman's Wardrobe">
+<meta name="twitter:description" content="Tell the AI stylist your occasion and budget. Get a complete suit outfit.">
+<meta name="google-site-verification" content="vlWe5ZQnM7qgXAullsJrO5VU6yB6UQDz7Q90mHoFVMY" />
+<title>Gentleman's Wardrobe — Dress Like You Mean It</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎩</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav aria-label="Main">
+  <div class="logo" onclick="showPage('home')" role="link" tabindex="0">Gentleman's Wardrobe</div>
+  <div class="nav-links">
+    <button class="nav-link" data-page="home" onclick="showPage('home')">Home</button>
+    <button class="nav-link" data-page="styler" onclick="showPage('styler')">Ask the stylist</button>
+    <button class="nav-link" data-page="suits" onclick="showPage('suits')">Suits</button>
+    <button class="nav-link" data-page="reviews" onclick="showPage('reviews')">Reviews</button>
+  </div>
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()">☰</button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="nav-link" onclick="showPage('home')">Home</button>
+  <button class="nav-link" onclick="showPage('styler')">Ask the stylist</button>
+  <button class="nav-link" onclick="showPage('suits')">Suits</button>
+  <button class="nav-link" onclick="showPage('reviews')">Reviews</button>
+</div>
+
+<main>
+<div class="page active" id="page-home">
+  <section class="hero" style="--hero-img:url('images/navy.webp')">
+    <div class="hero-text">
+      <p class="tag">The men's style authority</p>
+      <h1>Dress like<br><em>you mean it.</em></h1>
+      <p id="hero-tagline"></p>
+      <div class="actions">
+        <button class="btn" onclick="showPage('styler')">Ask the stylist</button>
+        <button class="btn btn-ghost" onclick="showPage('suits')">Explore suits</button>
+      </div>
+    </div>
+    <img class="hero-img" src="images/navy.webp" alt="Navy suit outfit board with shirt, tie, shoes, belt and watch" width="900" height="900">
+  </section>
+  <section class="wrap">
+    <p class="tag">How it works</p>
+    <h2 class="title">Three steps to sharp</h2>
+    <p class="sub">Tell us the occasion. Our AI picks the suit. You get the full look.</p>
+    <div class="steps">
+      <div class="step"><b>01</b><h3>Choose the occasion</h3><p class="sub">Interview, wedding, date night or office.</p></div>
+      <div class="step"><b>02</b><h3>Set your budget</h3><p class="sub">Pick a range and a colour if you have one.</p></div>
+      <div class="step"><b>03</b><h3>Get your look</h3><p class="sub">One suit, with the shirt, tie, shoes and a reason why.</p></div>
+    </div>
+  </section>
+  <section class="light"><div class="wrap">
+    <p class="tag">FAQ</p>
+    <h2 class="title">Good to know</h2>
+    <details><summary>How does the AI stylist work?</summary><p>You choose an occasion, budget and colour. An AI model picks the best match from our 15 suit guides and explains why.</p></details>
+    <details><summary>Does it use my photos or personal details?</summary><p>No. The stylist only receives the three choices you make. We never ask for photos, names or emails.</p></details>
+    <details><summary>Can the AI get it wrong?</summary><p>Sometimes. If the AI gives an answer we don't recognise, we pick the closest suit from our own guides and tell you so.</p></details>
+    <details><summary>Is it free?</summary><p>Yes, completely free. Some shopping links are affiliate links, which may earn us a small commission at no cost to you.</p></details>
+    <details><summary>Where are my reviews stored?</summary><p>Reviews are saved in your own browser only, so other visitors can't see them yet.</p></details>
+  </div></section>
+  <section class="wrap" style="text-align:center">
+    <h2 class="title">Not sure what to wear?</h2>
+    <button class="btn" onclick="showPage('styler')">Ask the stylist</button>
+  </section>
+</div>
+
+<div class="page" id="page-styler">
+  <div class="wrap">
+    <p class="tag">AI stylist</p>
+    <h2 class="title">Ask the stylist</h2>
+    <p class="sub">Three quick choices. One suit, picked for you.</p>
+    <div class="stylist-layout">
+    <form class="stylist-form" id="stylist-form" novalidate>
+      <div class="field"><label for="f-occasion">Occasion</label>
+        <select id="f-occasion"><option value="">Choose one</option><option value="interview">Interview</option><option value="office">Office</option><option value="wedding">Wedding</option><option value="date">Date night</option><option value="party">Party</option></select></div>
+      <div class="field"><label for="f-budget">Budget</label>
+        <select id="f-budget"><option value="">Choose one</option><option value="5000">Up to ₹5,000</option><option value="10000">Up to ₹10,000</option><option value="20000">Up to ₹20,000</option><option value="40000">Up to ₹40,000</option><option value="100000">Above ₹40,000</option></select></div>
+      <div class="field"><label for="f-color">Colour</label>
+        <select id="f-color"><option value="any">No preference</option><option value="black">Black</option><option value="charcoal">Charcoal</option><option value="gray">Gray</option><option value="navy">Navy</option><option value="blue">Blue</option><option value="olive">Olive</option><option value="green">Green</option><option value="burgundy">Burgundy</option><option value="brown">Brown</option><option value="cream">Cream</option><option value="tan">Tan</option></select></div>
+      <button class="btn" type="submit" id="f-submit">Get my look</button>
+    </form>
+    <div class="stylist-side">
+      <div id="stylist-out" aria-live="polite"></div>
+      <div class="stylist-hint">
+        <p class="tag">Not sure where to start?</p>
+        <div class="hint-grid">
+          <img src="images/navy.webp" alt="Navy suit outfit board" width="900" height="900" loading="lazy">
+          <img src="images/charcoal.webp" alt="Charcoal suit outfit board" width="900" height="900" loading="lazy">
+          <img src="images/burgundy.webp" alt="Burgundy suit outfit board" width="900" height="900" loading="lazy">
+        </div>
+        <p class="sub">Pick an occasion and a budget. The stylist chooses one of our 15 suits and tells you why.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="page" id="page-suits">
+  <div class="wrap">
+    <p class="tag">Suits guide</p>
+    <h2 class="title">Dress like <em>a power gentleman</em></h2>
+    <p class="sub">Tap a suit for the full guide: shirt, tie, pocket square, shoes, belt and watch.</p>
+    <div class="chips" id="chips-occasion" role="group" aria-label="Filter by occasion"></div>
+    <div class="chips" id="chips-color" role="group" aria-label="Filter by colour"></div>
+    <div class="grid" id="suits-grid"></div>
+    <p class="msg" id="suits-msg"></p>
+  </div>
+</div>
+
+<div class="page" id="page-reviews">
+  <div class="reviews">
+    <div class="tag">Community Reviews</div>
+    <h2 class="title">What <em>Gentlemen</em> Are Saying</h2>
+    <div class="rating-box">
+      <div>
+        <div class="big-num" id="avg-num">—</div>
+        <div class="big-stars" id="avg-stars" style="color:var(--border);">★★★★★</div>
+        <div class="big-count" id="rev-count">NO REVIEWS YET</div>
+      </div>
+      <div class="bar-rows">
+        <div class="bar-row"><span class="bar-lbl">5</span><div class="bar-track"><div class="bar-fill" id="b5"></div></div><span class="bar-count" id="c5">0</span></div>
+        <div class="bar-row"><span class="bar-lbl">4</span><div class="bar-track"><div class="bar-fill" id="b4"></div></div><span class="bar-count" id="c4">0</span></div>
+        <div class="bar-row"><span class="bar-lbl">3</span><div class="bar-track"><div class="bar-fill" id="b3"></div></div><span class="bar-count" id="c3">0</span></div>
+        <div class="bar-row"><span class="bar-lbl">2</span><div class="bar-track"><div class="bar-fill" id="b2"></div></div><span class="bar-count" id="c2">0</span></div>
+        <div class="bar-row"><span class="bar-lbl">1</span><div class="bar-track"><div class="bar-fill" id="b1"></div></div><span class="bar-count" id="c1">0</span></div>
+      </div>
+    </div>
+    <div class="review-form">
+      <div class="review-form-title">Leave Your Review</div>
+      <div class="star-row" id="star-row">
+        <button type="button" aria-label="1 stars" onclick="setStar(1)">★</button><button type="button" aria-label="2 stars" onclick="setStar(2)">★</button><button type="button" aria-label="3 stars" onclick="setStar(3)">★</button><button type="button" aria-label="4 stars" onclick="setStar(4)">★</button><button type="button" aria-label="5 stars" onclick="setStar(5)">★</button>
+      </div>
+      <input class="name-input" id="rev-name" placeholder="Your name (optional)" />
+      <textarea class="rev-input" id="rev-text" placeholder="Share your experience..."></textarea>
+      <button class="btn" onclick="submitReview()">Submit Review</button>
+    </div>
+    <div id="reviews-list"></div>
+  </div>
+</div>
+
+<!-- ADMIN -->
+
+<div class="page" id="page-terms">
+  <div class="legal">
+    <div class="tag">Legal</div>
+    <div class="legal-title">Terms of Use</div>
+    <div class="legal-date">Last updated: November 2026</div>
+
+    <div class="legal-highlight">
+      By using Gentleman's Wardrobe, you agree to these terms. Please read them carefully. If you do not agree, please do not use this website.
+    </div>
+
+    <h2>1. About This Website</h2>
+    <p>Gentleman's Wardrobe is a free men's style and outfit suggestion platform. We provide general style advice, outfit pairing suggestions, and suit styling guides for informational and entertainment purposes only.</p>
+
+    <h2>2. Free to Use</h2>
+    <p>Gentleman's Wardrobe is completely free to use. We do not charge for any features on this website. We reserve the right to introduce optional paid features in the future, but core features will always remain free.</p>
+
+    <h2>3. Style Advice Disclaimer</h2>
+    <p>All outfit suggestions, style tips, and recommendations provided on this website are for general guidance only. Fashion is subjective — what works for one person may not work for another. We are not responsible for any fashion decisions you make based on our suggestions.</p>
+    <ul>
+      <li>Our suggestions are based on general style principles</li>
+      <li>Results may vary based on individual body type, skin tone and personal preference</li>
+      <li>We recommend consulting a professional stylist for personalized advice</li>
+    </ul>
+
+    <h2>4. User Conduct</h2>
+    <p>When using Gentleman's Wardrobe, you agree to:</p>
+    <ul>
+      <li>Use the website for lawful purposes only</li>
+      <li>Not attempt to hack, damage or disrupt the website</li>
+      <li>Submit honest and genuine reviews only</li>
+      <li>Not submit offensive, hateful or inappropriate content in reviews</li>
+      <li>Not impersonate other users or provide false information</li>
+    </ul>
+
+    <h2>5. Reviews & User Content</h2>
+    <p>When you submit a review on Gentleman's Wardrobe, you grant us the right to display that review publicly on our website. We reserve the right to remove any review that is offensive, fake, or violates these terms.</p>
+    <ul>
+      <li>Reviews must be genuine and based on real experience</li>
+      <li>We may remove reviews without notice if they violate our guidelines</li>
+      <li>Do not include personal information in your reviews</li>
+    </ul>
+
+    <h2>6. AI Stylist</h2>
+    <p>When you use the Ask the Stylist feature:</p>
+    <ul>
+      <li>Only the occasion, budget and colour you choose are sent to an AI service to pick an outfit</li>
+      <li>We do not ask for photos, names or any personal details</li>
+      <li>AI suggestions can be imperfect, so treat them as guidance and not professional advice</li>
+    </ul>
+
+    <h2>7. Intellectual Property</h2>
+    <p>All content on Gentleman's Wardrobe — including the design, text, style guides, and outfit suggestions — is the property of Gentleman's Wardrobe. You may not copy, reproduce, or distribute our content without permission.</p>
+
+    <h2>8. Third Party Services</h2>
+    <p>Gentleman's Wardrobe uses third party services to enhance your experience:</p>
+    <ul>
+      <li>Google Fonts — for typography</li>
+      <li>Groq — for AI outfit recommendations in the Ask the Stylist feature</li>
+      <li>These services have their own terms and privacy policies</li>
+    </ul>
+
+    <h2>9. Limitation of Liability</h2>
+    <p>Gentleman's Wardrobe is provided "as is" without any warranties. We are not liable for any damages arising from your use of this website, including but not limited to style decisions, shopping choices, or technical issues.</p>
+
+    <h2>10. Changes to Terms</h2>
+    <p>We may update these terms from time to time. Continued use of the website after changes constitutes acceptance of the new terms. We will update the "Last updated" date at the top of this page when changes are made.</p>
+
+    <div class="legal-contact">
+      <strong>Questions about these Terms?</strong><br>
+      If you have any questions about our Terms of Use, please reach out to us through the website. We're happy to help.
+    </div>
+  </div>
+</div>
+
+<!-- PRIVACY POLICY PAGE -->
+
+<div class="page" id="page-privacy">
+  <div class="legal">
+    <div class="tag">Legal</div>
+    <div class="legal-title">Privacy Policy</div>
+    <div class="legal-date">Last updated: November 2026</div>
+
+    <div class="legal-highlight">
+      Your privacy is important to us. This policy explains what data we collect, how we use it, and your rights. Gentleman's Wardrobe is designed to collect as little data as possible.
+    </div>
+
+    <h2>1. Who We Are</h2>
+    <p>Gentleman's Wardrobe is a free men's style platform. We are committed to protecting your privacy and being transparent about how we handle your information.</p>
+
+    <h2>2. Data We Collect</h2>
+    <p>We collect very minimal data. Here is exactly what we store:</p>
+    <ul>
+      <li><strong style="color:var(--text);">Reviews you submit</strong> — your name (optional) and review text, stored locally in your browser</li>
+      <li><strong style="color:var(--text);">Usage stats</strong> — number of visits and outfits generated, stored locally in your browser only</li>
+      <li><strong style="color:var(--text);">Your preferences</strong> — taglines and settings saved locally in your browser</li>
+    </ul>
+    <p>We do <strong style="color:var(--gold);">NOT</strong> collect your name, email, phone number, location or any personal identifying information.</p>
+
+    <h2>3. AI Stylist Requests</h2>
+    <p>When you use the Ask the Stylist feature:</p>
+    <ul>
+      <li>Only the occasion, budget band and colour you choose are sent to our server and then to an AI service</li>
+      <li>No photos, names, emails or other personal details are requested or sent</li>
+      <li>We do not store these requests on a server of our own</li>
+    </ul>
+
+    <h2>4. Local Storage</h2>
+    <p>We use your browser's local storage to save your preferences and reviews. This data:</p>
+    <ul>
+      <li>Is stored only on your device — not on any server</li>
+      <li>Is never shared with third parties</li>
+      <li>Can be deleted by clearing your browser data at any time</li>
+      <li>Is not accessible to us or anyone else</li>
+    </ul>
+
+    <h2>5. Cookies</h2>
+    <p>Gentleman's Wardrobe does not use tracking cookies. We do not use cookies for advertising, analytics or tracking purposes. The only browser storage we use is local storage for your preferences.</p>
+
+    <h2>6. Third Party Services</h2>
+    <p>We use the following third party services:</p>
+    <ul>
+      <li><strong style="color:var(--text);">Google Fonts</strong> — loads fonts for our website. Google may collect limited data. See Google's privacy policy for details.</li>
+      <li><strong style="color:var(--text);">Groq</strong> — an AI service that picks an outfit for the Ask the Stylist feature. Only the occasion, budget band and colour you choose are sent. No personal data is shared.</li>
+    </ul>
+
+    <h2>7. No Advertising</h2>
+    <p>Gentleman's Wardrobe does not display advertisements and does not share your data with advertising networks. We do not sell, rent or trade your data to anyone.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>Gentleman's Wardrobe is intended for users aged 13 and above. We do not knowingly collect any data from children under 13. If you believe a child has submitted data, please contact us.</p>
+
+    <h2>9. Your Rights</h2>
+    <p>Since we store data only in your browser's local storage, you have full control:</p>
+    <ul>
+      <li>Clear your browser's local storage at any time to delete all data</li>
+      <li>You can use the website without submitting any data</li>
+      <li>Reviews are optional — you never have to submit one</li>
+    </ul>
+
+    <h2>10. Security</h2>
+    <p>Since we do not collect or store personal data on servers, there is no central database that can be breached. Your data stays on your device, under your control.</p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy as our website evolves. We will update the "Last updated" date at the top when changes are made. Continued use of the website after changes means you accept the updated policy.</p>
+
+    <h2>12. Contact Us</h2>
+    <p>If you have any questions, concerns or requests regarding your privacy, please contact us through the website. We take privacy seriously and will respond as soon as possible.</p>
+
+    <div class="legal-contact">
+      <strong>The Simple Version:</strong><br>
+      We don't collect your personal data. Your stylist choices are only used to get a recommendation. Reviews are stored in your browser only. No ads. No tracking. No selling your data. Ever. 🎩
+    </div>
+  </div>
+</div>
+
+</main>
+
+<div class="modal" id="suit-modal" role="dialog" aria-modal="true" aria-labelledby="m-name">
+  <div class="modal-box">
+    <img id="m-img" alt="" width="900" height="900">
+    <div class="modal-body">
+      <button class="modal-close" id="m-close" aria-label="Close">✕</button>
+      <h3 id="m-name"></h3>
+      <p class="sub" id="m-desc"></p>
+      <p class="quote" id="m-quote"></p>
+      <div id="m-details"></div>
+      <div class="shop">
+        <a href="https://www.amazon.com/s?k=mens+suit&amp;tag=gentlemansw-20" target="_blank" rel="noopener sponsored">Amazon</a>
+        <a href="https://www.asos.com/men/suits/" target="_blank" rel="noopener sponsored">ASOS</a>
+        <a href="https://www.amazon.com/s?k=mens+dress+shoes+oxford&amp;tag=gentlemansw-20" target="_blank" rel="noopener sponsored">Shoes</a>
+        <a href="https://www.amazon.com/s?k=mens+tie+silk&amp;tag=gentlemansw-20" target="_blank" rel="noopener sponsored">Ties</a>
+        <small>Affiliate links. We may earn a small commission at no extra cost to you.</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Gentleman's Wardrobe</div>
+  <div class="footer-tagline" id="footer-tagline"></div>
+  <div class="footer-links">
+    <a class="footer-link" onclick="showPage('home')" tabindex="0" role="link">Home</a>
+    <a class="footer-link" onclick="showPage('styler')" tabindex="0" role="link">Ask the stylist</a>
+    <a class="footer-link" onclick="showPage('suits')" tabindex="0" role="link">Suits</a>
+    <a class="footer-link" onclick="showPage('reviews')" tabindex="0" role="link">Reviews</a>
+    <a class="footer-link" onclick="showPage('terms')" tabindex="0" role="link">Terms of use</a>
+    <a class="footer-link" onclick="showPage('privacy')" tabindex="0" role="link">Privacy policy</a>
+  </div>
+  <div style="margin:1rem 0;"><a href="https://www.instagram.com/gentlemans.wardrobe.official" target="_blank" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.6rem 1.4rem;border:1px solid var(--line);border-radius:999px;color:var(--tan);font-size:0.78rem;text-decoration:none;letter-spacing:0.08em;">📸 @gentlemans.wardrobe.official</a></div>
+  <div class="footer-copy">© 2026 GENTLEMAN'S WARDROBE</div>
+</footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,940 @@
+[
+  {
+    "id": "charcoal",
+    "name": "Charcoal Grey Suit",
+    "desc": "The boardroom classic. Commands authority.",
+    "badge": "Power",
+    "occasions": [
+      "interview",
+      "office",
+      "wedding"
+    ],
+    "colors": [
+      "charcoal"
+    ],
+    "priceBand": "mid",
+    "swatch": "#2a2a2a",
+    "image": "images/charcoal.webp",
+    "alt": "Charcoal Grey Suit outfit board: White Dress Shirt, Burgundy Solid Tie, Black Cap-toe Oxford.",
+    "quote": "Charcoal with burgundy is the ultimate power move. It says I've already won before you spoke.",
+    "details": [
+      {
+        "type": "Shirt",
+        "val": "White Dress Shirt",
+        "tip": "Crisp white is non-negotiable.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Tie",
+        "val": "Burgundy Solid Tie",
+        "tip": "Adds depth and authority.",
+        "color": "#6b1a1a"
+      },
+      {
+        "type": "Pocket Square",
+        "val": "White or Burgundy",
+        "tip": "White fold or burgundy pocket square.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Shoes",
+        "val": "Black Cap-toe Oxford",
+        "tip": "Black cap-toe Oxford, always.",
+        "color": "#111"
+      },
+      {
+        "type": "Belt",
+        "val": "Black Leather Belt",
+        "tip": "Must match shoes exactly.",
+        "color": "#111"
+      },
+      {
+        "type": "Watch",
+        "val": "Silver or Black Watch",
+        "tip": "Metal bracelet or black leather strap.",
+        "color": "#888"
+      },
+      {
+        "type": "Glasses",
+        "val": "Black or Tortoise Frame",
+        "tip": "Dark frames complement charcoal.",
+        "color": "#2a2a2a"
+      }
+    ]
+  },
+  {
+    "id": "navy",
+    "name": "Navy Blue Suit",
+    "desc": "Versatile and sharp. Never out of place.",
+    "badge": "Sharp",
+    "occasions": [
+      "interview",
+      "office",
+      "wedding",
+      "date"
+    ],
+    "colors": [
+      "navy"
+    ],
+    "priceBand": "mid",
+    "swatch": "#1a2848",
+    "image": "images/navy.webp",
+    "alt": "Navy Blue Suit outfit board: Light Blue Dress Shirt, Silver or Grey Tie, Dark Brown Oxford.",
+    "quote": "Navy blue is the most powerful versatile suit a gentleman can own. It works everywhere, every time. Need we say more?",
+    "details": [
+      {
+        "type": "Shirt",
+        "val": "Light Blue Dress Shirt",
+        "tip": "Light blue creates elegant tonal contrast.",
+        "color": "#7aadda"
+      },
+      {
+        "type": "Tie",
+        "val": "Silver or Grey Tie",
+        "tip": "Silver tie is the boardroom gold standard.",
+        "color": "#888"
+      },
+      {
+        "type": "Pocket Square",
+        "val": "White or Light Blue",
+        "tip": "Keep it simple and clean.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Shoes",
+        "val": "Dark Brown Oxford",
+        "tip": "Brown shoes with navy is a classic pairing.",
+        "color": "#5c3a1a"
+      },
+      {
+        "type": "Belt",
+        "val": "Brown Leather Belt",
+        "tip": "Match exactly with your shoes.",
+        "color": "#5c3a1a"
+      },
+      {
+        "type": "Watch",
+        "val": "Gold or Brown Leather Watch",
+        "tip": "Warm tones complement navy beautifully.",
+        "color": "#c9a84c"
+      },
+      {
+        "type": "Glasses",
+        "val": "Tortoise or Brown Frame",
+        "tip": "Warm frame tones work well with navy.",
+        "color": "#6b4a2a"
+      }
+    ]
+  },
+  {
+    "id": "black",
+    "name": "Black Suit",
+    "desc": "Bold and commanding. Wear with confidence.",
+    "badge": "Statement",
+    "occasions": [
+      "wedding",
+      "party",
+      "date"
+    ],
+    "colors": [
+      "black"
+    ],
+    "priceBand": "premium",
+    "swatch": "#111",
+    "image": "images/black.webp",
+    "alt": "Black Suit outfit board: Black or White Shirt, Black Silk Tie, Black Oxford or Derby.",
+    "quote": "The black suit is worn when you walk in knowing you've already won. A true gentleman only wears it when he wants everyone to know it.",
+    "details": [
+      {
+        "type": "Shirt",
+        "val": "Black or White Shirt",
+        "tip": "All-black is a statement. White for contrast.",
+        "color": "#111"
+      },
+      {
+        "type": "Tie",
+        "val": "Black Silk Tie",
+        "tip": "Black on black — the ultimate power move.",
+        "color": "#111"
+      },
+      {
+        "type": "Pocket Square",
+        "val": "White Only",
+        "tip": "White pocket square is the only option.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Shoes",
+        "val": "Black Oxford or Derby",
+        "tip": "Only black shoes with a black suit.",
+        "color": "#111"
+      },
+      {
+        "type": "Belt",
+        "val": "Black Leather Belt",
+        "tip": "Must be black, no exceptions.",
+        "color": "#111"
+      },
+      {
+        "type": "Watch",
+        "val": "Black or Silver Watch",
+        "tip": "Black dial for drama, silver for elegance.",
+        "color": "#333"
+      },
+      {
+        "type": "Glasses",
+        "val": "Black Thin Frame",
+        "tip": "Thin black frames keep the look sleek.",
+        "color": "#111"
+      }
+    ]
+  },
+  {
+    "id": "lightgrey",
+    "name": "Light Grey Suit",
+    "desc": "Sophisticated and refined. Daytime formal.",
+    "badge": "Elegant",
+    "occasions": [
+      "office",
+      "wedding",
+      "date"
+    ],
+    "colors": [
+      "gray"
+    ],
+    "priceBand": "mid",
+    "swatch": "#888",
+    "image": "images/lightgrey.webp",
+    "alt": "Light Grey Suit outfit board: White Dress Shirt, Navy Blue or Burgundy Tie, Black or Dark Brown Oxford.",
+    "quote": "Light grey says I'm refined and I know it. Perfect for a day in court or a client meeting.",
+    "details": [
+      {
+        "type": "Shirt",
+        "val": "White Dress Shirt",
+        "tip": "White keeps light grey looking fresh.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Tie",
+        "val": "Navy Blue or Burgundy Tie",
+        "tip": "Dark tie creates beautiful contrast.",
+        "color": "#1a2848"
+      },
+      {
+        "type": "Pocket Square",
+        "val": "White or Navy",
+        "tip": "White fold or navy pocket square.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Shoes",
+        "val": "Black or Dark Brown Oxford",
+        "tip": "Either works, black is sharper.",
+        "color": "#111"
+      },
+      {
+        "type": "Belt",
+        "val": "Match Your Shoes",
+        "tip": "Black belt with black shoes, brown with brown.",
+        "color": "#333"
+      },
+      {
+        "type": "Watch",
+        "val": "Silver Watch",
+        "tip": "Silver watch complements light grey perfectly.",
+        "color": "#aaa"
+      },
+      {
+        "type": "Glasses",
+        "val": "Silver or Black Frame",
+        "tip": "Metal frames look great with light grey.",
+        "color": "#888"
+      }
+    ]
+  },
+  {
+    "id": "olive",
+    "name": "Olive Green Suit",
+    "desc": "Modern and distinctive. For the bold man.",
+    "badge": "Fresh",
+    "occasions": [
+      "date",
+      "party"
+    ],
+    "colors": [
+      "olive"
+    ],
+    "priceBand": "mid",
+    "swatch": "#4a5a30",
+    "image": "images/olive.webp",
+    "alt": "Olive Green Suit outfit board: Cream or White Shirt, Brown or Dark Green Tie, Tan or Caramel Loafers.",
+    "quote": "Olive is for the man who writes the rules, not follows them. Bold choice. Correct choice.",
+    "details": [
+      {
+        "type": "Shirt",
+        "val": "Cream or White Shirt",
+        "tip": "Cream shirt gives a warm luxurious feel.",
+        "color": "#f5e6c8"
+      },
+      {
+        "type": "Tie",
+        "val": "Brown or Dark Green Tie",
+        "tip": "Earthy tones complement olive beautifully.",
+        "color": "#5c3a1a"
+      },
+      {
+        "type": "Pocket Square",
+        "val": "Cream or Burnt Orange",
+        "tip": "Warm tones make the suit pop.",
+        "color": "#f5e6c8"
+      },
+      {
+        "type": "Shoes",
+        "val": "Tan or Caramel Loafers",
+        "tip": "Tan shoes are the perfect earthy match.",
+        "color": "#c8a070"
+      },
+      {
+        "type": "Belt",
+        "val": "Tan Leather Belt",
+        "tip": "Tan belt matching your shoes is essential.",
+        "color": "#c8a070"
+      },
+      {
+        "type": "Watch",
+        "val": "Brown Leather Strap Watch",
+        "tip": "Vintage style watch elevates olive suits.",
+        "color": "#6b4a2a"
+      },
+      {
+        "type": "Glasses",
+        "val": "Tortoise Frame",
+        "tip": "Tortoise shell is the perfect olive companion.",
+        "color": "#6b4a2a"
+      }
+    ]
+  },
+  {
+    "id": "royalblue",
+    "name": "Royal Blue Suit",
+    "desc": "Confident and charismatic. Turns heads.",
+    "badge": "Bold",
+    "occasions": [
+      "wedding",
+      "party"
+    ],
+    "colors": [
+      "blue"
+    ],
+    "priceBand": "mid",
+    "swatch": "#1a3a8a",
+    "image": "images/royalblue.webp",
+    "alt": "Royal Blue Suit outfit board: White or Pale Pink Shirt, White or Silver Tie, Dark Brown Derby.",
+    "quote": "Royal blue is not for the timid. It's for the man who walks in and owns the room before saying a word.",
+    "details": [
+      {
+        "type": "Shirt",
+        "val": "White or Pale Pink Shirt",
+        "tip": "Light shirt creates stunning contrast.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Tie",
+        "val": "White or Silver Tie",
+        "tip": "Keep the tie light to balance the bold suit.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Pocket Square",
+        "val": "White Silk Square",
+        "tip": "Clean white square keeps it sharp.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Shoes",
+        "val": "Dark Brown Derby",
+        "tip": "Dark brown grounds the boldness of royal blue.",
+        "color": "#3e2010"
+      },
+      {
+        "type": "Belt",
+        "val": "Dark Brown Leather Belt",
+        "tip": "Match your dark brown shoes.",
+        "color": "#3e2010"
+      },
+      {
+        "type": "Watch",
+        "val": "Gold Watch",
+        "tip": "Gold watch adds luxurious warmth.",
+        "color": "#c9a84c"
+      },
+      {
+        "type": "Glasses",
+        "val": "Gold Frame or Tortoise",
+        "tip": "Warm metallic frames complement royal blue.",
+        "color": "#c9a84c"
+      }
+    ]
+  },
+  {
+    "id": "burgundy",
+    "name": "Burgundy Suit",
+    "desc": "Rich, powerful and unforgettable.",
+    "badge": "Luxe",
+    "occasions": [
+      "wedding",
+      "party",
+      "date"
+    ],
+    "colors": [
+      "burgundy"
+    ],
+    "priceBand": "premium",
+    "swatch": "#6b1a2a",
+    "image": "images/burgundy.webp",
+    "alt": "Burgundy Suit outfit board: White or Pale Grey Shirt, Dark Grey or Black Tie, Black Oxford.",
+    "quote": "Burgundy is power dressed as elegance. Wear it when you want to be remembered.",
+    "details": [
+      {
+        "type": "Shirt",
+        "val": "White or Pale Grey Shirt",
+        "tip": "Light neutrals let the burgundy shine.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Tie",
+        "val": "Dark Grey or Black Tie",
+        "tip": "Dark tie creates a powerful combination.",
+        "color": "#333"
+      },
+      {
+        "type": "Pocket Square",
+        "val": "White or Pale Grey",
+        "tip": "Keep it understated to let the suit speak.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Shoes",
+        "val": "Black Oxford",
+        "tip": "Black shoes keep burgundy grounded.",
+        "color": "#111"
+      },
+      {
+        "type": "Belt",
+        "val": "Black Leather Belt",
+        "tip": "Black belt matches the black shoes.",
+        "color": "#111"
+      },
+      {
+        "type": "Watch",
+        "val": "Silver or Rose Gold Watch",
+        "tip": "Both tones work beautifully with burgundy.",
+        "color": "#aaa"
+      },
+      {
+        "type": "Glasses",
+        "val": "Black or Dark Brown Frame",
+        "tip": "Dark frames complement burgundy's richness.",
+        "color": "#111"
+      }
+    ]
+  },
+  {
+    "id": "forest",
+    "name": "Forest Green Suit",
+    "desc": "Nature meets luxury. Quietly powerful.",
+    "badge": "Rare",
+    "occasions": [
+      "wedding",
+      "party"
+    ],
+    "colors": [
+      "green"
+    ],
+    "priceBand": "premium",
+    "swatch": "#1a3a20",
+    "image": "images/forest.webp",
+    "alt": "Forest Green Suit outfit board: White or Ivory Shirt, Dark Brown or Burnt Orange Tie, Dark Brown Brogue Oxford.",
+    "quote": "Forest green is for the man who doesn't follow fashion. He sets it.",
+    "details": [
+      {
+        "type": "Shirt",
+        "val": "White or Ivory Shirt",
+        "tip": "Pure white against forest green is stunning.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Tie",
+        "val": "Dark Brown or Burnt Orange Tie",
+        "tip": "Earthy autumnal tones complement forest green.",
+        "color": "#5c3a1a"
+      },
+      {
+        "type": "Pocket Square",
+        "val": "Ivory or Burnt Orange",
+        "tip": "Warm pocket square adds depth.",
+        "color": "#f5e6c8"
+      },
+      {
+        "type": "Shoes",
+        "val": "Dark Brown Brogue Oxford",
+        "tip": "Brogues and green suits are a perfect match.",
+        "color": "#3e2010"
+      },
+      {
+        "type": "Belt",
+        "val": "Dark Brown Leather Belt",
+        "tip": "Dark brown anchors the earthy look.",
+        "color": "#3e2010"
+      },
+      {
+        "type": "Watch",
+        "val": "Bronze or Brown Leather Watch",
+        "tip": "Vintage tones elevate forest green.",
+        "color": "#6b4a2a"
+      },
+      {
+        "type": "Glasses",
+        "val": "Round Tortoise Frame",
+        "tip": "Round tortoise frames give an intellectual edge.",
+        "color": "#6b4a2a"
+      }
+    ]
+  },
+  {
+    "id": "brown",
+    "name": "Brown Tweed Suit",
+    "desc": "Timeless English gentleman aesthetic.",
+    "badge": "Classic",
+    "occasions": [
+      "office",
+      "date"
+    ],
+    "colors": [
+      "brown"
+    ],
+    "priceBand": "mid",
+    "swatch": "#6b5a3e",
+    "image": "images/brown.webp",
+    "alt": "Brown Tweed Suit outfit board: White or Cream Shirt, Paisley or Knit Tie, Brown Brogue Oxford.",
+    "quote": "Tweed is not a suit. It's a legacy. Wear it when you want people to know you have taste that predates trends.",
+    "details": [
+      {
+        "type": "Shirt",
+        "val": "White or Cream Shirt",
+        "tip": "Keep the shirt classic and simple.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Tie",
+        "val": "Paisley or Knit Tie",
+        "tip": "Texture-on-texture is the tweed rule.",
+        "color": "#5c3a1a"
+      },
+      {
+        "type": "Pocket Square",
+        "val": "Wool or Linen Square",
+        "tip": "Rustic textures work perfectly here.",
+        "color": "#c8a070"
+      },
+      {
+        "type": "Shoes",
+        "val": "Brown Brogue Oxford",
+        "tip": "Brogues are the only choice for tweed.",
+        "color": "#5c3a1a"
+      },
+      {
+        "type": "Belt",
+        "val": "Dark Brown Leather Belt",
+        "tip": "Deep brown leather anchors the look.",
+        "color": "#3e2010"
+      },
+      {
+        "type": "Watch",
+        "val": "Vintage Brown Leather Watch",
+        "tip": "A vintage timepiece completes the look.",
+        "color": "#5c3a1a"
+      },
+      {
+        "type": "Glasses",
+        "val": "Round Tortoise Frame",
+        "tip": "Round frames give authentic gentleman energy.",
+        "color": "#6b4a2a"
+      }
+    ]
+  },
+  {
+    "id": "pinstripe",
+    "name": "Pinstripe Suit",
+    "desc": "The Wall Street classic. Authority personified.",
+    "badge": "Authority",
+    "occasions": [
+      "interview",
+      "office"
+    ],
+    "colors": [
+      "navy"
+    ],
+    "priceBand": "premium",
+    "swatch": "#1e1e2e",
+    "image": "images/pinstripe.webp",
+    "alt": "Pinstripe Suit outfit board: White Spread Collar Shirt, Solid Burgundy or Navy Tie, Black Cap-toe Oxford.",
+    "quote": "The pinstripe suit doesn't ask for respect. It demands it. This is Wall Street's uniform for a reason.",
+    "details": [
+      {
+        "type": "Shirt",
+        "val": "White Spread Collar Shirt",
+        "tip": "A spread collar balances the pinstripe pattern.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Tie",
+        "val": "Solid Burgundy or Navy Tie",
+        "tip": "Solid tie contrasts beautifully with pinstripes.",
+        "color": "#6b1a1a"
+      },
+      {
+        "type": "Pocket Square",
+        "val": "White TV Fold",
+        "tip": "Clean TV fold for maximum authority.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Shoes",
+        "val": "Black Cap-toe Oxford",
+        "tip": "Cap-toe Oxford is the pinstripe's perfect partner.",
+        "color": "#111"
+      },
+      {
+        "type": "Belt",
+        "val": "Black Leather Belt",
+        "tip": "Black belt, no exceptions with pinstripe.",
+        "color": "#111"
+      },
+      {
+        "type": "Watch",
+        "val": "Classic Silver Dress Watch",
+        "tip": "A thin silver dress watch is the final touch.",
+        "color": "#aaa"
+      },
+      {
+        "type": "Glasses",
+        "val": "Thin Black Frame",
+        "tip": "Thin frames keep the look sharp and clean.",
+        "color": "#111"
+      }
+    ]
+  },
+  {
+    "id": "windowpane",
+    "name": "Windowpane Check Suit",
+    "desc": "Distinguished pattern for the discerning man.",
+    "badge": "Distinctive",
+    "occasions": [
+      "interview",
+      "office"
+    ],
+    "colors": [
+      "gray"
+    ],
+    "priceBand": "premium",
+    "swatch": "#2e3a4a",
+    "image": "images/windowpane.webp",
+    "alt": "Windowpane Check Suit outfit board: White or Light Blue Shirt, Solid Tie in Accent Color, Brown Derby or Loafer.",
+    "quote": "The windowpane check is for the man who understands that subtlety is the highest form of sophistication.",
+    "details": [
+      {
+        "type": "Shirt",
+        "val": "White or Light Blue Shirt",
+        "tip": "Simple shirt lets the pattern breathe.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Tie",
+        "val": "Solid Tie in Accent Color",
+        "tip": "Pick one color from the check for your tie.",
+        "color": "#6b4a2a"
+      },
+      {
+        "type": "Pocket Square",
+        "val": "White or Matching Solid",
+        "tip": "Simple pocket square keeps it balanced.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Shoes",
+        "val": "Brown Derby or Loafer",
+        "tip": "Brown shoes complement the pattern elegantly.",
+        "color": "#5c3a1a"
+      },
+      {
+        "type": "Belt",
+        "val": "Brown Leather Belt",
+        "tip": "Match your brown shoes.",
+        "color": "#5c3a1a"
+      },
+      {
+        "type": "Watch",
+        "val": "Gold or Silver Watch",
+        "tip": "Either works — choose based on tie color.",
+        "color": "#c9a84c"
+      },
+      {
+        "type": "Glasses",
+        "val": "Tortoise or Brown Frame",
+        "tip": "Warm frames complement the check pattern.",
+        "color": "#6b4a2a"
+      }
+    ]
+  },
+  {
+    "id": "cream",
+    "name": "Cream / Ivory Suit",
+    "desc": "The summer statement. Effortlessly refined.",
+    "badge": "Summer",
+    "occasions": [
+      "wedding",
+      "date"
+    ],
+    "colors": [
+      "cream"
+    ],
+    "priceBand": "mid",
+    "swatch": "#e8dfc0",
+    "image": "images/cream.webp",
+    "alt": "Cream / Ivory Suit outfit board: White or Pale Blue Shirt, Navy or Light Blue Tie, Tan Suede Loafers.",
+    "quote": "Cream in summer is not casual. It's the most confident statement a man can make in warm weather.",
+    "details": [
+      {
+        "type": "Shirt",
+        "val": "White or Pale Blue Shirt",
+        "tip": "Light shirt keeps the tonal look elegant.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Tie",
+        "val": "Navy or Light Blue Tie",
+        "tip": "Cool tones contrast cream beautifully.",
+        "color": "#1a2848"
+      },
+      {
+        "type": "Pocket Square",
+        "val": "Light Blue or White",
+        "tip": "Cool pocket square balances warm cream.",
+        "color": "#7aadda"
+      },
+      {
+        "type": "Shoes",
+        "val": "Tan Suede Loafers",
+        "tip": "Tan suede is the ultimate cream suit shoe.",
+        "color": "#c8a070"
+      },
+      {
+        "type": "Belt",
+        "val": "Tan Leather Belt",
+        "tip": "Tan belt matching your loafers.",
+        "color": "#c8a070"
+      },
+      {
+        "type": "Watch",
+        "val": "Gold Watch with Light Strap",
+        "tip": "Gold and cream is a classic luxury pairing.",
+        "color": "#c9a84c"
+      },
+      {
+        "type": "Glasses",
+        "val": "Gold or Light Tortoise Frame",
+        "tip": "Light warm frames complement cream perfectly.",
+        "color": "#c9a84c"
+      }
+    ]
+  },
+  {
+    "id": "camel",
+    "name": "Camel / Tan Suit",
+    "desc": "Warm and sophisticated. Autumn's finest.",
+    "badge": "Autumn",
+    "occasions": [
+      "date",
+      "party",
+      "wedding"
+    ],
+    "colors": [
+      "tan"
+    ],
+    "priceBand": "mid",
+    "swatch": "#c8a070",
+    "image": "images/camel.webp",
+    "alt": "Camel / Tan Suit outfit board: White or Ivory Shirt, Dark Brown or Burgundy Tie, Dark Brown Oxford.",
+    "quote": "Camel is autumn distilled into a suit. It says warmth, wealth, and wisdom all at once.",
+    "details": [
+      {
+        "type": "Shirt",
+        "val": "White or Ivory Shirt",
+        "tip": "Keep the shirt clean and simple.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Tie",
+        "val": "Dark Brown or Burgundy Tie",
+        "tip": "Deep tones anchor the warm camel.",
+        "color": "#3e2010"
+      },
+      {
+        "type": "Pocket Square",
+        "val": "White or Brown",
+        "tip": "White for contrast, brown for tone.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Shoes",
+        "val": "Dark Brown Oxford",
+        "tip": "Deep brown creates beautiful tonal depth.",
+        "color": "#3e2010"
+      },
+      {
+        "type": "Belt",
+        "val": "Dark Brown Leather Belt",
+        "tip": "Match your dark brown shoes.",
+        "color": "#3e2010"
+      },
+      {
+        "type": "Watch",
+        "val": "Rose Gold or Brown Leather Watch",
+        "tip": "Warm metals suit camel beautifully.",
+        "color": "#c9a84c"
+      },
+      {
+        "type": "Glasses",
+        "val": "Dark Brown or Tortoise Frame",
+        "tip": "Warm dark frames complete the autumnal look.",
+        "color": "#6b4a2a"
+      }
+    ]
+  },
+  {
+    "id": "midblue",
+    "name": "Mid Blue Suit",
+    "desc": "Fresh, approachable yet sharp.",
+    "badge": "Versatile",
+    "occasions": [
+      "interview",
+      "office",
+      "date"
+    ],
+    "colors": [
+      "blue"
+    ],
+    "priceBand": "budget",
+    "swatch": "#3a5f9e",
+    "image": "images/midblue.webp",
+    "alt": "Mid Blue Suit outfit board: White or Light Pink Shirt, Navy or Dark Red Tie, Brown Loafer or Derby.",
+    "quote": "Mid blue is confidence without arrogance. It says I know what I'm doing and I don't need to shout about it.",
+    "details": [
+      {
+        "type": "Shirt",
+        "val": "White or Light Pink Shirt",
+        "tip": "Both work — white for sharp, pink for warm.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Tie",
+        "val": "Navy or Dark Red Tie",
+        "tip": "Darker tie adds depth to mid blue.",
+        "color": "#1a2848"
+      },
+      {
+        "type": "Pocket Square",
+        "val": "White or Pale Pink",
+        "tip": "Keep pocket square light and simple.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Shoes",
+        "val": "Brown Loafer or Derby",
+        "tip": "Brown shoes are mid blue's natural partner.",
+        "color": "#5c3a1a"
+      },
+      {
+        "type": "Belt",
+        "val": "Brown Leather Belt",
+        "tip": "Match your brown shoes.",
+        "color": "#5c3a1a"
+      },
+      {
+        "type": "Watch",
+        "val": "Silver or Gold Watch",
+        "tip": "Both tones complement mid blue equally.",
+        "color": "#aaa"
+      },
+      {
+        "type": "Glasses",
+        "val": "Tortoise or Black Frame",
+        "tip": "Either works for mid blue.",
+        "color": "#6b4a2a"
+      }
+    ]
+  },
+  {
+    "id": "slategrey",
+    "name": "Slate Grey Suit",
+    "desc": "Cool, modern and effortlessly sharp.",
+    "badge": "Modern",
+    "occasions": [
+      "interview",
+      "office"
+    ],
+    "colors": [
+      "gray"
+    ],
+    "priceBand": "budget",
+    "swatch": "#4a5a6a",
+    "image": "images/slategrey.webp",
+    "alt": "Slate Grey Suit outfit board: White or Pale Blue Shirt, Teal or Burgundy Tie, Black or Dark Brown Oxford.",
+    "quote": "Slate grey is the modern man's power suit. Not as loud as charcoal, twice as sharp.",
+    "details": [
+      {
+        "type": "Shirt",
+        "val": "White or Pale Blue Shirt",
+        "tip": "Cool tones complement slate grey perfectly.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Tie",
+        "val": "Teal or Burgundy Tie",
+        "tip": "Both create stunning contrast with slate grey.",
+        "color": "#00796b"
+      },
+      {
+        "type": "Pocket Square",
+        "val": "White or Teal",
+        "tip": "White for classic, teal for modern edge.",
+        "color": "#f0f0eb"
+      },
+      {
+        "type": "Shoes",
+        "val": "Black or Dark Brown Oxford",
+        "tip": "Either shoe works equally well.",
+        "color": "#111"
+      },
+      {
+        "type": "Belt",
+        "val": "Match Your Shoes",
+        "tip": "Always match belt to shoe color.",
+        "color": "#333"
+      },
+      {
+        "type": "Watch",
+        "val": "Silver Watch",
+        "tip": "Cool silver tones suit slate grey naturally.",
+        "color": "#aaa"
+      },
+      {
+        "type": "Glasses",
+        "val": "Black or Silver Frame",
+        "tip": "Cool tone frames complement slate grey.",
+        "color": "#333"
+      }
+    ]
+  }
+]
